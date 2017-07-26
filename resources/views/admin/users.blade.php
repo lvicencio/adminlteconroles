@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('admin.dashboard')
 
-@section('content')
-<div class="container">
+@section('contenido')
+{{-- <div class="container"> --}}
             <div class="panel panel-default">
                 <div class="panel-heading">Crear un Nuevo Usuario2</div>
 
@@ -83,5 +83,5 @@ return confirm('¿Esta seguro de Eliminar este registro?')">
 
                 </div>
             </div>
-          </div>
+          {{-- </div> --}}
 @endsection

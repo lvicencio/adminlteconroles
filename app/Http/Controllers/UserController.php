@@ -14,14 +14,14 @@ class UserController extends Controller
      */
     public function index()
     {
-      $users = User::paginate(10);
+      $users = User::paginate(5);
       return view('admin.index')->with(compact('users'));
     }
 
     public function buscador(Request $request)
     {
       $name = $request -> input('name');
-      $users = User::Buscador($name)->paginate(10);
+      $users = User::Buscador($name)->paginate(5);
       return view('admin.index')->with(compact('users'));
     }
     // public function buscador(Request $request)

@@ -1,9 +1,9 @@
 @extends('admin.dashboard')
 
 @section('contenido')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+{{-- <div class="container"> --}}
+    {{-- <div class="row">
+        <div class="col-md-8 col-md-offset-2"> --}}
             <div class="panel panel-default">
                 <div class="panel-heading">Panel Administrador</div>
 
@@ -83,7 +83,7 @@ return confirm('¿Esta seguro de Eliminar este registro?')">
 
                 {{ $users->links() }}
             </div>
-        </div>
-    </div>
-</div>
+        {{-- </div>
+    </div> --}}
+{{-- </div> --}}
 @endsection
